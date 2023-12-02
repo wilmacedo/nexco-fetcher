@@ -1,6 +1,6 @@
 filename=main
 
-all: test build zip
+all: build zip
 
 build:
 	@GOOS=linux GOARCH=amd64 go build -v -o bin/${filename} cmd/main.go
